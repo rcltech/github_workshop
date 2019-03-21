@@ -6,6 +6,22 @@ tictactoe.py is a python program that allows 2 users to play the nostalgic game 
 
 Users take turns to input board numbers to update the board.
 
+##### Data structure
+```
+data = {
+  'board': [0,1,2,3,4,5,6,7,8],
+  'moves':0,
+  'end': False,
+  'winner': None
+}
+```
+`data` - a python object to store all data
+
+`board` -  the current tic tac toe board
+
+`moves` - the current number of moves elapsed
+
+`winner` - the winner of the game
 
 ### Tasks outline
 For this workshop, you and your partner will write 2 different parts of the same program to complete tictactoe.py. One of you will complete one of the tasks. You are not allowed to complete both tasks by yourself, but both of you should work together to solve problems.
