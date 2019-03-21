@@ -22,6 +22,7 @@ def checkForNoWinner(data):
 
 # ============= TASK A ==============
 def checkForWinner(data):
+    # create a newData object by copying data
     newData = data.copy()
 
     # the conditions for winning the game using row, column or diagonal tiles on the board
@@ -31,11 +32,14 @@ def checkForWinner(data):
         [0,4,8], [2,4,6] # diagonal conditions
     ]
 
-    # write a for loop to check each condition against the board
-    # return the function as soon as a winner is found
     # use newData instead of data, because you don't want to accidentally change the original data
-
+    # write a for loop to check each condition against the board
+    # return newData as soon as a winner is found
     # if no winner is found, do not return anything
+
+
+
+
 
     # check for no winner (this has been written for you)
     newData = checkForNoWinner(data)
@@ -46,12 +50,14 @@ def checkForWinner(data):
 
 
 def updateBoard(data, currentTurn, userInput):
-    # Task B
 
     # currentTurn refers to a character which is either 'X' or 'O', update the board using this variable
     # userInput refers to the number that the user entered during this turn
 
     # figure out a way to update the board
+
+
+    pass # remove this line when you have completed this function
 
 
 # ============= DO NOT CHANGE ANYTHING BELOW THIS ==============
@@ -74,7 +80,7 @@ def main():
 
         printBoard(data)
         data['moves'] += 1
-        data = checkWinner(data)
+        data = checkForWinner(data)
 
     print("Winner:", data['winner'])
 
