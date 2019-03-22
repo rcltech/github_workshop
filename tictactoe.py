@@ -34,10 +34,16 @@ def checkForWinner(data):
 
     # use newData instead of data, because you don't want to accidentally change the original data
     # write a for loop to check each condition against the board
-    # return newData as soon as a winner is found
+    # when winner is found,
+            # make newData['winner'] = the winner you have found
+            # set newData['end'] to be true
+            # return newData
     # if no winner is found, do not return anything
-
-
+    for condition in conditions:
+        if newData['board'][condition[0]] == newData['board'][condition[0]] == newData['board'][condition[0]]:
+            newData['winner'] = newData['board'][condition[0]]
+            newData['end'] = True
+            return newData
 
 
 
