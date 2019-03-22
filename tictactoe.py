@@ -39,11 +39,7 @@ def checkForWinner(data):
             # set newData['end'] to be true
             # return newData
     # if no winner is found, do not return anything
-    for condition in conditions:
-        if newData['board'][condition[0]] == newData['board'][condition[0]] == newData['board'][condition[0]]:
-            newData['winner'] = newData['board'][condition[0]]
-            newData['end'] = True
-            return newData
+    
 
 
 
