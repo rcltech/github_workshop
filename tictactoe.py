@@ -39,7 +39,11 @@ def checkForWinner(data):
             # set newData['end'] to be true
             # return newData
     # if no winner is found, do not return anything
-    
+    for condition in conditions:
+        if newData['board'][condition[0]] == newData['board'][condition[0]] == newData['board'][condition[0]]:
+            newData['winner'] = newData['board'][condition[0]]
+            newData['end'] = True
+            return newData
 
 
 
@@ -57,9 +61,9 @@ def updateBoard(data, currentTurn, userInput):
     # userInput refers to the number that the user entered during this turn
 
     # figure out a way to update the board
+    data['board'][userInput] = currentTurn
 
 
-    pass # remove this line when you have completed this function
 
 
 # ============= DO NOT CHANGE ANYTHING BELOW THIS ==============
